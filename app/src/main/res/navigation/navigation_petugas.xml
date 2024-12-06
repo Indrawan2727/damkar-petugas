@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_petugas"
+    app:startDestination="@id/homeFragmentP">
+
+    <fragment
+        android:id="@+id/homeFragmentP"
+        android:name="com.wain.petugas.petugas.fragments.HomeFragmentp"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_homep" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragmentP"
+        android:name="com.wain.petugas.petugas.fragments.ProfileFragmentp"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/infoFragmentP"
+        android:name="com.wain.petugas.petugas.fragments.InfoFragmentp"
+        android:label="info_history"
+        tools:layout="@layout/fragment_infop" >
+    </fragment>
+</navigation>

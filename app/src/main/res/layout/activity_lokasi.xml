@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="500dp"
+        android:layout_height="450dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_circle_radius"
+        app:navigationIcon="@drawable/ic_back"
+        android:layout_marginLeft="20dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mapFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:id="@+id/edt_selesai"
+                        android:inputType="text" />
+                    <EditText
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:id="@+id/edt_petugas"
+                        android:inputType="text" />
+                    <EditText
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:id="@+id/edt_id"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/tvNamaLokasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Nama"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/llRoute"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/bg_circle_radius"
+                                android:backgroundTint="@color/design_default_color_error"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_rute" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Google Maps"
+                                android:textColor="@color/design_default_color_error"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llPhone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/bg_circle_radius"
+                                android:backgroundTint="@color/design_default_color_error"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_phone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Telepon"
+                                android:textColor="@color/design_default_color_error"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageLocation"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_location"
+                            app:tint="@color/design_default_color_error" />
+
+                        <TextView
+                            android:id="@+id/tvNamaJalan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toEndOf="@+id/imageLocation"
+                            android:layout_toRightOf="@+id/imageLocation"
+                            android:text="Nama Jalan"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageDirection"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:padding="5dp"
+                            android:src="@drawable/edit"
+                            app:tint="@color/design_default_color_error" />
+
+                        <TextView
+                            android:id="@+id/tvDeskripsi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toEndOf="@+id/imageDirection"
+                            android:layout_toRightOf="@+id/imageDirection"
+                            android:text="Deskripsi"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageDistance"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_directions"
+                            android:backgroundTint="@color/design_default_color_error" />
+
+                        <TextView
+                            android:id="@+id/tvDistance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toEndOf="@+id/imageDistance"
+                            android:layout_toRightOf="@+id/imageDistance"
+                            android:text="Deskripsi"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="10dp">
+                    <Button
+                        android:id="@+id/btn_selesai"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/bg_btn_login1"
+                        android:text="Selesai"
+                        android:textColor="@color/white" />
+
+                   </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </FrameLayout>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/pb2"
+        android:layout_centerInParent="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+</RelativeLayout>

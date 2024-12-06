@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "297871875401",
+    "project_id": "cobadamkar",
+    "storage_bucket": "cobadamkar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297871875401:android:b810b56c9296ad34410e98",
+        "android_client_info": {
+          "package_name": "com.wain.damkar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297871875401-2i8dpopk7ikjebf4krkk2vrkeeees82k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wain.damkar",
+            "certificate_hash": "a811a798873f7228fa61821dcb0972e094421ed5"
+          }
+        },
+        {
+          "client_id": "297871875401-t2j7g1mjvoe58hthjfuks2a8tu584uom.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEEt-o72XLBTv8ZLzAa4z3gcrmHCTVgWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297871875401-t2j7g1mjvoe58hthjfuks2a8tu584uom.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

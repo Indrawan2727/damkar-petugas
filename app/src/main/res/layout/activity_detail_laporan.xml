@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".petugas.activity.DetailLaporanActivity">
+
+    <include
+        layout="@layout/toolbar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/gambar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_namana"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="Nama  "
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/tv_Keterangana"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:text="Keterangan "
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/tv_alamata"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="@dimen/_60sdp"
+                            android:ellipsize="marquee"
+                            android:maxLines="5"
+                            android:text="Alamaat "
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+                        <TextView
+                            android:id="@+id/tv_latlong"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="@dimen/_120sdp"
+                            android:ellipsize="marquee"
+                            android:maxLines="5"
+                            android:text="latlong "
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+                        <TextView
+                            android:id="@+id/tv_deskripsia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="@dimen/_150sdp"
+                            android:ellipsize="marquee"
+                            android:maxLines="6"
+                            android:text="Deskripsi"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_75sdp">
+                    <Button
+                        android:id="@+id/btn_menujulokasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="menuju Lokasi">
+                    </Button>
+                </RelativeLayout>
+            </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

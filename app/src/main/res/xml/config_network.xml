@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-scurity-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">kardamcoba43.000webhostapp.com</domain>
+    </domain-config>
+</network-scurity-config>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/homeFragmentP"
+        android:icon="@drawable/ic_baseline_home_24" />
+    <item android:title="Informasi"
+        android:id="@+id/infoFragmentP"
+        android:icon="@drawable/ic_baseline_line_weight_24"/>
+    <item android:title="Profile"
+        android:id="@+id/profileFragmentP"
+        android:icon="@drawable/ic_baseline_account_circle_24"/>
+</menu>
